@@ -1,35 +1,23 @@
-import * as React from "react"
+import Link from "../components/link"
 import PropTypes from "prop-types"
-import { Link } from "gatsby"
+import React from "react"
+import styled from 'styled-components'
+import { Nav, Heading, Button, ThemeContext } from "grommet"
+
+const NavButton = styled(Button)`
+  &:hover {
+    color: black;
+  }
+  `;
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+
+  <Nav direction="row" justify="center" pad="large" gap="xlarge">
+    <Link margin="xxlarge" to="/projects/"><NavButton plain label="Projects" color="dark-6"/></Link>
+    <Link to="/projects/"><NavButton plain label="About" color="dark-6"/></Link>
+    <Link to="/projects/"><NavButton plain label="Contact" color="dark-6"/></Link>
+  </Nav>
+);
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
