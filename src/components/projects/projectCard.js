@@ -7,8 +7,9 @@ import '../../styles/projects.scss';
 import Data from '../../data/Projects.yaml';
 import Link from '../../components/link'
 import images from '../../static/images';
+import testImage from '../../static/dungeonmaster.png'
 
-
+//{images[props.name]
 
 const ProjectCard = (props) =>(
     <Box className="projectBox" direction="row-responsive">
