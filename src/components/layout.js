@@ -2,8 +2,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
-import "./layout.css"
+import Header from "./Header"
+import "./layout.scss"
 import { Grommet, Anchor, Box, Footer, Text } from "grommet"
 import { grommet } from "grommet/themes"
 

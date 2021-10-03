@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Mono&display=swap");
+
+#Projects {
+    //border-top: 1px solid black;
+    margin-top: 1rem;
+
+}
+
+.imgBox * {
+    filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.3));
+    display: none;
+}
+.projectText {
+    padding: 2rem;
+    padding-top: 0;
+}
+
+.tags li {
+    background-color: #DBEAFE;
+    color: #2655da;
+    border-radius: 16px;
+    font-weight: 500;
+    font-size:13px;
+    text-align: center;
+    display:inline-block;
+    padding: 12px 10px 12px 10px;
+    line-height:1px;
+
+}
+
+
+#Projects h3 {
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: 0px;
+}
+#Projects h2 {
+    font-weight: bold;
+    font-size: 2.2rem;
+    margin-bottom: 0px;
+    margin-top: 2rem;
+    padding-bottom: 0px;
+    line-height: 0px;
+}
+
+.iconLinks {
+    font-size: 1.25em;
+    margin-top: 1rem;
+}
+
+.icon:hover {
+    transition: 0.3s ease-out;
+    fill: black;
+}
+.icon {
+    transition: 0.3s ease-out;
+    fill: #7F7F7F;
+
+}
+
+.projectText p {
+    margin: 0px;
+    padding:0px;
+    margin-bottom: 1rem;
+}
+.projectTitle {
+    margin-top: .5rem;
+    margin-bottom: 0px;
+}
+.projectBox {
+    margin: 0px;
+    padding: 0px;
+    min-height: 100%;
+}
+
+
+@media screen and (min-width: 500px) {
+
+    #Projects {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+        display: inline-block;
+    }
+    .projectText:not(tags) {
+        margin-bottom: 0px;
+        line-height: 1rem;
+        margin-top: 1vh;
+    }
+    .projectText p {
+        margin-top: 1rem;
+        word-break: normal;
+    }
+    .imgBox * {
+        display: initial;
+        background-color: white;
+    }
+    .imgBox {
+        width: 30rem;
+        height: 16rem;
+    }
+    .projectimg {
+        object-fit:scale-down;
+        border: 0.2rem solid #3b82f6;
+        border-radius: 5px;
+        overflow: hidden;
+
+    }
+    .projectBox {
+        margin-top: 2rem;
+        display: visible;
+        justify-items: center;
+        padding: 1rem;
+        width: 100%;
+    }
+
+
+    #SocialBox {
+        margin-top: 6rem;
+    }
+}
+@media screen and (max-width: 1500px) {
+    #Projects {
+        width: 80%;
+        display: inline-block;
+    }
+    .imgBox {
+        width: 22rem;
+        height: 11rem;
+    }
+}
+
+
+@media screen and (max-width: 800px) and (min-height:815px) {
+    #Projects > *{
+        margin-left: 0px;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+    .projectBox {
+        margin: 0px;
+        margin-bottom: 4.5rem;
+        height: 6rem;
+        margin-left: 1rem;
+    }
+    h2 {
+        margin-left: 2rem;
+    }
+}
+
+//TEMPORARY RULE. ONLY HERE TO CORRECTLY SIZE MY 'DUNGEONMASTER' PLACEHOLDER IMAGE.
+.projectBox:nth-child(3) * {
+    object-fit: cover;
+}
+.projectBox:nth-child(4) * {
+    object-fit: cover;
+}

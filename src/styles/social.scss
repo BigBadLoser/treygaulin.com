@@ -1,0 +1,33 @@
+
+
+#SocialBox {
+    border: none;
+    border-top: 1px solid #e8e8e8;
+    margin: 40px 40%;
+    margin-top: 4vh;
+    padding-top: 1vh;
+    .SocialIcon > *{
+        transition: 0.3s ease-out;
+        fill:#AEAEAE;
+    }
+    .SocialIcon:hover > * {
+        transition: 0.3s ease-out;
+        fill: black;
+    }
+
+
+    .SocialIcon {
+        margin: .75em;
+    }
+
+}
+
+@media screen and (max-width: 330px) {
+    #SocialBox {
+        margin-bottom: 3rem;
+    }
+    .SocialIcon {
+        width: 1px;
+    }
+}
+

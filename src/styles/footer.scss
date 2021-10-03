@@ -1,0 +1,43 @@
+.footer {
+    justify-content: center;
+    align-items: center;
+    color: #7F7F7F;
+    padding: 2rem;
+}
+
+.footer p a {
+    color: #7F7F7F;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease-out;
+    border-bottom: 0px;
+    position: relative
+}
+
+.footer p a:visited {
+    //color:#7F7F7F;
+    //text-decoration: none;
+}
+
+.footer p a:hover {
+
+}
+
+.footer p a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    background: black;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.footer p a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+

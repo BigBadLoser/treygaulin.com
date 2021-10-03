@@ -1,0 +1,22 @@
+Nav {
+    //margin-top:0.8em;
+    .NavButton {
+      transition: 0.3s ease-out;
+      font-weight: 400;
+      font-size: 16px;
+    }
+}
+
+Button {
+    &:hover {
+    color: black;
+    }
+}
+@media screen and (max-width: 500px) {
+    Nav {
+        margin-top: -10vh;
+        .NavButton {
+            display: none;
+        }
+    }
+}

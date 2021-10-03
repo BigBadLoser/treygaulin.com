@@ -1,0 +1,27 @@
+dungeonMaster:
+ title: DungeonMaster (WIP)
+ desc: Discord RPG with a React inventory app
+ repo: DungeonMaster
+ live: https:github.com/bigbadloser
+ tags:
+  - Javascript
+  - DiscordJS
+  - Next.js
+portfolio:
+ title: Personal Portfolio Site
+ desc: A website to showcase my work.
+ repo: treygaulin.com
+ live: https://treygaulin.com
+ tags:
+  - Javascript
+  - React
+  - Gatsby
+iosApp:
+ title: iOS App (WIP)
+ desc: an app on iOS
+ repo: undefined
+ live: https:github.com/bigbadloser
+ tags:
+  - Swift
+  - Xcode
+  - FireBase

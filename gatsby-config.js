@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/treygaulin.com",
   siteMetadata: {
     title: `Trey Gaulin`,
     description: `A site to host Trey Gaulin's Portfolio`,
@@ -8,6 +9,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
+    'gatsby-plugin-styled-components',
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
